@@ -1,18 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import SettingUp from './Components/SettingUp'
+import {TextInput, StyleSheet, Text, View } from 'react-native';
 
-import NextStep from './Components/NextStep'
+
 
 export default function App() {
+  
   return (
-    <View style = {styles.container}>
-      <View style = {styles.nextStep}>
-      <NextStep nextStep ={this.NextStepHandler}/>
-      </View>
-      
-      <Text style = {{fontSize: 30, color:'white', textAlign: 'center', bottom:100}}>What are you planning on saving for?</Text>
-      {/* TODO: make container for style */}
-    </View>
+    
     
   );
 }
