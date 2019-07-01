@@ -1,6 +1,6 @@
 import react, {Component} from 'react';
-import { } from 'react-native';
-import {createStackNavigator} from 'react-navigate';
+import {TextInput, StyleSheet, Text, View } from 'react-native';
+import {createStackNavigator} from 'react-navigation';
 
 import { white } from 'ansi-colors';
 
