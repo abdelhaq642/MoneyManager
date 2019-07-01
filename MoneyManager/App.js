@@ -1,7 +1,10 @@
 import React from 'react';
-import SettingUp from './Components/SettingUp'
 import {TextInput, StyleSheet, Text, View } from 'react-native';
 import {Button} from 'react-native';
+
+import Plan from './Components/Plan';
+import Budget from './Components/Budget';
+
 
 
 export default function App() {
@@ -11,6 +14,12 @@ export default function App() {
     <Button title = "hello"></Button>
   );
 }
+
+
+
+
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -27,5 +36,11 @@ const styles = StyleSheet.create({
     bottom: 10,
     right: 10,
 
+  },
+
+  Back: {
+      position: 'absolute',
+      bottom: -10,
+      right: -10,
   }
 });

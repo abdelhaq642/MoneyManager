@@ -1,37 +1,12 @@
-import react, {Component} from 'react';
+import React from 'react';
 import {TextInput, StyleSheet, Text, View } from 'react-native';
 import {createStackNavigator} from 'react-navigation';
 
-import { white } from 'ansi-colors';
-
-class Plan extends Component{
-    
-      
-render(){
-
-    return(
-    <View style = {styles.container}>
-      <View style = {styles.nextStep}>
-      <Button onPress={() => this.props.navigation.navigate('budget')} title = "Next Step"></Button>
-      </View>
-      
-      <Text style = {{fontSize: 30, color:'white', textAlign: 'center', bottom:100}}>What are you planning on saving for?</Text>
-      <TextInput style = {{height: 40, width: 200, margin: 20, borderColor: 'gray', textAlign: 'center', backgroundColor: 'white', borderWidth: 1}}/>
-      
-
-      
-      {/* TODO: make container for style */}
-    </View>
-    );
+import Plan from './Plan'
 
 
-};
+class Budget extends React.Component{
 
-
-}
-class Budget extends Component{
-    
-      
     render(){
     
         return(
@@ -58,8 +33,12 @@ class Budget extends Component{
     
     
     };
-    
+
+
+
 }
+
+
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -84,9 +63,11 @@ const styles = StyleSheet.create({
     }
   });
 
-export default createStackNavigator({
+  export default createStackNavigator({
 
     plan: Plan,
     budget: Budget,
     
 });
+
+  export default Budget;
