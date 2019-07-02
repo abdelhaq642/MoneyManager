@@ -17,7 +17,7 @@ export default class App extends React.Component {
   render(){
     return(
       <View style = {styles.container}>
-        <Plan/>
+        <Text>Hello</Text>
       </View>
     );
   }
@@ -52,3 +52,5 @@ const styles = StyleSheet.create({
       right: -10,
   }
 });
+
+

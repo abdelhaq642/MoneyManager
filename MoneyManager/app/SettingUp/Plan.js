@@ -31,11 +31,5 @@ class Plan extends React.Component{
     
 }
 
-export default createStackNavigator({
-
-    plan: Plan,
-    budget: Budget,
-    
-});
 
 export default Plan;

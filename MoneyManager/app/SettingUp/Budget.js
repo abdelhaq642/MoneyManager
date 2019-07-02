@@ -69,11 +69,5 @@ const styles = StyleSheet.create({
     }
   });
 
-  export default createStackNavigator({
-
-    plan: Plan,
-    budget: Budget,
-    
-});
 
   export default Budget;
