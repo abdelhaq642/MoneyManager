@@ -1,5 +1,11 @@
 import React from 'react';
-import {TextInput, StyleSheet, Text, View } from 'react-native';
+import {
+  TextInput, 
+  StyleSheet, 
+  Text, 
+  View 
+} from 'react-native';
+
 import {createStackNavigator} from 'react-navigation';
 
 import Plan from './Plan'

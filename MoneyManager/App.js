@@ -1,18 +1,26 @@
 import React from 'react';
-import {TextInput, StyleSheet, Text, View } from 'react-native';
+import {TextInput, 
+  StyleSheet, 
+  Text, 
+  View 
+} from 'react-native';
+
 import {Button} from 'react-native';
 
-import Plan from './Components/Plan';
-import Budget from './Components/Budget';
+import Plan from './app/SettingUp/Plan';
+import Budget from './app/SettingUp/Budget';
 
 
 
-export default function App() {
+export default class App extends React.Component {
   
-  return (
-    
-    <Button title = "hello"></Button>
-  );
+  render(){
+    return(
+      <View style = {styles.container}>
+        <Plan/>
+      </View>
+    );
+  }
 }
 
 
