@@ -1,11 +1,8 @@
 import React from 'react';
 import {TextInput, StyleSheet, Text, View, Button } from 'react-native';
-import {createStackNavigator} from 'react-navigation';
-
-import Budget from './BudgetScreen';
 
 
-class PlanScreen extends React.Component{
+export class PlanScreen extends React.Component{
     
       
     render(){
@@ -14,11 +11,18 @@ class PlanScreen extends React.Component{
         <View style = {styles.container}>
           
          
-          <Text style = {{fontSize: 30, color:'white', textAlign: 'center', bottom:100}}>What are you planning on saving for?</Text>
+          <Text style = {{fontSize: 30, color:'white', textAlign: 'center', bottom:100}}>
+            What are you planning on saving for?
+          </Text>
+          
           <TextInput style = {{height: 40, width: 200, margin: 20, borderColor: 'gray', textAlign: 'center', backgroundColor: 'white', borderWidth: 1}}/>
           
           <View style ={styles.nextStep}>
-            <Button title = "Next Step" onPress = {() => this.props.navigation.navigate('secondScreen')}/>
+            <Button 
+            title = "Next Step" 
+            onPress = {() => this.props.navigation.navigate('BudgetScreen')}
+            />
+
           </View>
           
           
@@ -58,4 +62,3 @@ const styles = StyleSheet.create({
     }
   });
 
-export default PlanScreen;

@@ -6,12 +6,9 @@ import {
   View 
 } from 'react-native';
 
-import {createStackNavigator} from 'react-navigation';
-
-import Plan from './PlanScreen'
 
 
-class BudgetScreen extends React.Component{
+export class BudgetScreen extends React.Component{
 
     render(){
     
@@ -58,4 +55,4 @@ const styles = StyleSheet.create({
   });
 
 
-  export default BudgetScreen;
+  
