@@ -7,8 +7,8 @@ import {TextInput,
 import {Button} from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
-import PlanScreen from './app/SettingUp/PlanScreen';
-import BudgetScreen from './app/SettingUp/BudgetScreen';
+import PlanScreen from './app/Components/PlanScreen';
+import BudgetScreen from './app/Components/BudgetScreen';
 
 
 
