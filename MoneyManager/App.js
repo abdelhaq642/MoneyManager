@@ -4,28 +4,34 @@ import {TextInput,
   Text, 
   View 
 } from 'react-native';
-
 import {Button} from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
-import Plan from './app/SettingUp/Plan';
-import Budget from './app/SettingUp/Budget';
+import PlanScreen from './app/SettingUp/PlanScreen';
+import BudgetScreen from './app/SettingUp/BudgetScreen';
+
 
 
 
 export default class App extends React.Component {
-  
+ 
   render(){
     return(
-      <View style = {styles.container}>
-        <Text>Hello</Text>
-      </View>
+     <navigate/>
     );
   }
 }
 
 
 
+const navigate = createStackNavigator({
+  SettingUp: {
+      firstScreen: PlanScreen,
+      secondScreen: BudgetScreen,
+  }
 
+
+})
 
 
 
