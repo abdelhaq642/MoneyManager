@@ -9,8 +9,13 @@ import { createStackNavigator } from 'react-navigation';
     PlanScreen: { screen: PlanScreen },
     BudgetScreen: { screen: BudgetScreen},
     PayScreen: {screen: PayScreen},
-    PriorityScreen:{PriorityScreen}
-
+    PriorityScreen:{ screen: PriorityScreen}
+    
     //Home Page
-  });
+  },
+  {
+    headerMode: 'none',
+    header: null
+  }
+  );
 
