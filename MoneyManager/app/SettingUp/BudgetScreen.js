@@ -8,7 +8,7 @@ import {
 
 
 
-export class BudgetScreen extends React.Component{
+export default class BudgetScreen extends React.Component{
 
     render(){
     

@@ -2,7 +2,7 @@ import React from 'react';
 import {TextInput, StyleSheet, Text, View, Button } from 'react-native';
 
 
-export class PlanScreen extends React.Component{
+export default class PlanScreen extends React.Component{
     
       
     render(){
