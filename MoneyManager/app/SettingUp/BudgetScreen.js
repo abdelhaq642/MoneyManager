@@ -3,8 +3,10 @@ import {
   TextInput, 
   StyleSheet, 
   Text, 
-  View 
+  View,
+  Button 
 } from 'react-native';
+
 
 
 
@@ -15,9 +17,30 @@ export default class BudgetScreen extends React.Component{
         return(
         <View style = {styles.container}>
           
-          <Text style = {{fontSize: 30, color:'white', textAlign: 'center', bottom:100}}>What is the budget that you are considering?</Text>
+          <Text style = {{fontSize: 30, color:'white', textAlign: 'center', bottom:100}}>Whats your budget on each save?</Text>
           <TextInput style = {{height: 40, width: 200, margin: 20, borderColor: 'gray', textAlign: 'center', backgroundColor: 'white', borderWidth: 1}}/>
-          
+          <View style ={styles.nextStep}>
+
+            <Button 
+
+            title = "Next Step"
+            color = 'white'
+            onPress = {() => this.props.navigation.navigate('PayScreen')}
+            
+            />
+
+          </View>
+          <View style ={styles.Back}>
+
+            <Button 
+
+            title = "Back"
+            color = 'white'
+            onPress = {() => this.props.navigation.navigate('PlanScreen')}
+            
+            />
+
+          </View>
           {/* TODO: make container for style */}
         </View>
         );
@@ -49,8 +72,8 @@ const styles = StyleSheet.create({
 
     Back: {
         position: 'absolute',
-        bottom: -10,
-        right: -10,
+        bottom: 10,
+        left: 10,
     }
   });
 

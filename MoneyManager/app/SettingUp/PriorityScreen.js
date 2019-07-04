@@ -1,18 +1,17 @@
-import React from 'react';
+import React from 'react'
 import {TextInput, StyleSheet, Text, View, Button } from 'react-native';
 
+export default class PriorityScreen extends React.Component{
 
-export default class PlanScreen extends React.Component{
-    
-      
     render(){
-    
+
         return(
-        <View style = {styles.container}>
+
+            <View style = {styles.container}>
           
          
           <Text style = {{fontSize: 30, color:'white', textAlign: 'center', bottom:100}}>
-            What are you planning on saving for?
+            How often do you get paid?
           </Text>
           
           <TextInput style = {{height: 40, width: 200, margin: 20, borderColor: 'gray', textAlign: 'center', backgroundColor: 'white', borderWidth: 1}}/>
@@ -21,22 +20,32 @@ export default class PlanScreen extends React.Component{
             <Button 
             title = "Next Step" 
             color = 'white'
-            onPress = {() => this.props.navigation.navigate('BudgetScreen')}
+            onPress = {() => this.props.navigation.navigate('')}
             />
 
           </View>
-          
-          
-          {/* TODO: make container for style */}
-        </View>
-        );
-    
-    
-    };
-    
-    
-}
 
+          <View style ={styles.Back}>
+
+            <Button 
+
+            title = "Back"
+            color = 'white'
+            onPress = {() => this.props.navigation.navigate('PayScreen')}
+            
+            />
+         </View>
+          
+        </View>
+
+        
+        );
+
+    };
+
+
+
+}
 
 
 const styles = StyleSheet.create({
@@ -58,8 +67,7 @@ const styles = StyleSheet.create({
 
     Back: {
         position: 'absolute',
-        bottom: -10,
-        right: -10,
+        bottom: 10,
+        left: 10,
     }
   });
-
